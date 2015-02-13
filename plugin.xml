@@ -46,6 +46,7 @@
 		<uses-permission android:name="android.permission.USE_CREDENTIALS" />
 	</config-file>
 
+	<resource-file src="res/drawable/icon.png" target="res/drawable/icon.png" />
 	<resource-file src="res/xml/authenticator.xml" target="res/xml/authenticator.xml" />
 
 	<source-file src="src/android/AccountManagerPlugin.java" target-dir="src/com/polychrom/cordova" />
