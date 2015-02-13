@@ -17,6 +17,9 @@
 
     <!-- android -->
     <platform name="android">
+	
+    <preference name="ACCOUNT_TYPE" value="MyAccountType" />
+	
 	<config-file target="res/xml/config.xml" parent="/*">
 		<feature name="AccountManager" >
 			<param name="android-package" value="com.polychrom.cordova.AccountManagerPlugin"/>
@@ -24,7 +27,7 @@
 	</config-file>
 	
 	<config-file target="res/values/strings.xml" parent="/*">
-		<string name="aam_account_type">MyAccountType</string>
+		<string name="aam_account_type">$ACCOUNT_TYPE</string>
 	</config-file>
 
 	<config-file target="AndroidManifest.xml" parent="/manifest/application">
